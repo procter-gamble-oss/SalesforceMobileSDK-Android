@@ -205,7 +205,7 @@ abstract class SyncDownTarget : SyncTarget {
         additionalPredicate: String
     ): String {
         return String.format(
-            "SELECT {%s:%s} FROM {%s} WHERE {%s:%s} = 'false' %s ORDER BY {%s:%s} ASC",
+            "SELECT {%s:%s} FROM {%s} WHERE {%s:%s} = false %s ORDER BY {%s:%s} ASC",
             soupName,
             idField,
             soupName,
