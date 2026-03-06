@@ -119,7 +119,7 @@ abstract class SyncTarget @JvmOverloads constructor(
      */
     protected open fun getDirtyRecordIdsSql(soupName: String, idField: String): String {
         return String.format(
-            "SELECT {%s:%s} FROM {%s} WHERE {%s:%s} = 'true' ORDER BY {%s:%s} ASC",
+            "SELECT {%s:%s} FROM {%s} WHERE {%s:%s} = true ORDER BY {%s:%s} ASC",
             soupName,
             idField,
             soupName,
